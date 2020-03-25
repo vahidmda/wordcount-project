@@ -1,0 +1,11 @@
+
+<h1>Hi There</h1>
+
+<p>Type your text below :</P>
+<form class="" action="{% url 'count' %}" method="post">
+  {% csrf_token %}
+  <textarea name="fulltext" rows="8" cols="80"></textarea>
+  <br>
+  <br>
+  <input type="submit" value="Count!">
+</form>
